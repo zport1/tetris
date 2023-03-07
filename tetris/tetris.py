@@ -185,32 +185,32 @@ def listener() -> list:
     Returns:
         list: The lsit of commands to be followed.
     """
-    commands = []
+    bingus = []
     if keyboard_input.is_newly_pressed("a"):
-        commands.append("left")
+        bingus.append("left")
     if keyboard_input.is_newly_pressed("d"):
-        if "left" not in commands:
-            commands.append("right")
+        if "left" not in bingus:
+            bingus.append("right")
         else:
-            commands.remove("left")
+            bingus.remove("left")
 
     if keyboard_input.is_currently_pressed("s"):
-        commands.append("soft drop")
+        bingus.append("soft drop")
     if keyboard_input.is_newly_pressed("w"):
-        commands.append("hard drop")
+        bingus.append("hard drop")
 
     if keyboard_input.is_newly_pressed("j"):
-        commands.append("rotate left")
+        bingus.append("rotate left")
     if keyboard_input.is_newly_pressed("l"):
-        if "rotate left" not in commands:
-            commands.append("rotate right")
+        if "rotate left" not in bingus:
+            bingus.append("rotate right")
         else:
-            commands.remove("rotate left")
+            bingus.remove("rotate left")
 
     if keyboard_input.is_newly_pressed("i"):
-        commands.append("store")
+        bingus.append("store")
 
-    return commands
+    return bingus
 
 
 def delta_wait(start_time: int, current_loop: int):
