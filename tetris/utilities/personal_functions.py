@@ -300,9 +300,9 @@ def boolput(*message: str, sep: str = " ", letter_time: float = .025,
     # I listed every reasonable affirmative and negative word I could think of.
     # I also added the ability to add more.
     positive_answers = (['ok', 'okay', 'yes', 'y', 'sure', '1', 'true', 'affirmative',
-                         'alright', 't', 'yeah', 'yup', 'ye', 'yea'] + add_true)
+                         'alright', 't', 'ya', 'thanks', 'yeah', 'yup', 'ye', 'yea'] + add_true)
     negative_answers = (['no', 'nope', 'negative', 'nein', '0',
-                         'n', 'false', 'nah', 'nay', 'negatory'] + add_false)
+                         'n', 'na', 'fuck you', 'false', 'nah', 'nay', 'negatory'] + add_false)
 
     # Gets the response and checks it against both lists.
     # If there are no matches, it simply casts to bool.
