@@ -7,7 +7,7 @@ Things to do (not necessarily in order):
 	Movement controls
 	Rotation controls
 	"Wall kicks" (moving to the side because of a rotation)
-	Scores
+	Scores-- zeph
 	Gameplay frame
 	Block storage
 	Death
